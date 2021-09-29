@@ -1,5 +1,5 @@
 {
-  "name": "dc",
+  "name": "@gaohangdy/dc",
   "version": "4.2.7",
   "license": "Apache-2.0",
   "copyright": "2020",
@@ -76,5 +76,8 @@
   },
   "browser": "dist/dc.js",
   "main": "dist/dc.js",
-  "module": "src/index.js"
+  "module": "src/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }

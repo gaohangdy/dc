@@ -1232,6 +1232,13 @@ d3-chord@2:
   dependencies:
     d3-path "1 - 2"
 
+d3-cloud@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.nlark.com/d3-cloud/download/d3-cloud-1.2.5.tgz#3e91564f2d27fba47fcc7d812eb5081ea24c603d"
+  integrity sha1-PpFWTy0n+6R/zH2BLrUIHqJMYD0=
+  dependencies:
+    d3-dispatch "^1.0.3"
+
 d3-collection@^1.0.7:
   version "1.0.7"
   resolved "https://registry.nlark.com/d3-collection/download/d3-collection-1.0.7.tgz#349bd2aa9977db071091c13144d5e4f16b5b310e"
@@ -1260,6 +1267,11 @@ d3-delaunay@5:
   version "2.0.0"
   resolved "https://registry.nlark.com/d3-dispatch/download/d3-dispatch-2.0.0.tgz?cache=0&sync_timestamp=1623039622806&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fd3-dispatch%2Fdownload%2Fd3-dispatch-2.0.0.tgz#8a18e16f76dd3fcaef42163c97b926aa9b55e7cf"
   integrity sha1-ihjhb3bdP8rvQhY8l7kmqptV588=
+
+d3-dispatch@^1.0.3:
+  version "1.0.6"
+  resolved "https://registry.nlark.com/d3-dispatch/download/d3-dispatch-1.0.6.tgz?cache=0&sync_timestamp=1623039622806&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fd3-dispatch%2Fdownload%2Fd3-dispatch-1.0.6.tgz#00d37bcee4dd8cd97729dd893a0ac29caaba5d58"
+  integrity sha1-ANN7zuTdjNl3Kd2JOgrCnKq6XVg=
 
 d3-drag@2:
   version "2.0.0"

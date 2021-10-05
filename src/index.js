@@ -42,3 +42,5 @@ export * from './charts/select-menu';
 export * from './charts/series-chart';
 export * from './charts/sunburst-chart';
 export * from './charts/text-filter-widget';
+// export * from './charts/wordcloud';
+export * from './charts/word-cloud';

@@ -69,8 +69,9 @@ const WordcloudChart = function (parent, chartGroup) {
         // .attr("alignment-baseline", "hanging")
         // .attr("x", 10)
         // .attr("y", 10);
-        _chart.width(parent.parentElement.offsetWidth - 24);
-        _chart.height(parent.parentElement.offsetHeight - 24);
+        
+        // _chart.width(parent.parentElement.offsetWidth - 24);
+        // _chart.height(parent.parentElement.offsetHeight - 24);
 
         _cloud = cloud().size([_chart.width(), _chart.height()]);
 
@@ -115,12 +116,13 @@ const WordcloudChart = function (parent, chartGroup) {
               const e = d3.select(this);
               const filterfun = e.text()
                   ? function (val) {
-                      // return new RegExp(e.text(), "i").test(val);
-                      return val;
+                      return new RegExp(e.text(), 'i').test(val);
+                      //   return val;
                   }
                   : null;
               console.log(`Select: ${e.text()}`);
-              _chart._dimension.filter(e.text());
+              _chart._dimension.filter(filterfun);
+              _chart.redrawGroup();
               // displaySelection.text(`selection="${e.text()}"`);
               e.classed('word-selected', !e.classed('word-selected'));
           }

@@ -45,7 +45,7 @@ const WordcloudChart = function (parent, chartGroup) {
 
         const groups = _chart._computeOrderedGroups(_chart.data()).filter(d => _chart.valueAccessor()(d) !== 0);
 
-        const data = groups.map((d, i) => {
+        const data = groups.sort((a, b)=> b.value - a.value).slice(0, 200).map((d, i) => {
             const value = _chart.valueAccessor()(d);
             const key = _chart.keyAccessor()(d);
             const title = _chart.title()(d);

@@ -175,7 +175,8 @@ export class BaseMixin {
      */
     height (height) {
         if (!arguments.length) {
-            if (!utils.isNumber(this._height)) {
+            // if (!utils.isNumber(this._height)) {
+            if (!utils.isNumber(this._height) || this._height !== this._heightCalc(this._root.node())) {
                 // only calculate once
                 this._height = this._heightCalc(this._root.node());
             }
@@ -201,7 +202,8 @@ export class BaseMixin {
      */
     width (width) {
         if (!arguments.length) {
-            if (!utils.isNumber(this._width)) {
+            // if (!utils.isNumber(this._width)) {
+            if (!utils.isNumber(this._width) || this._width !== this._widthCalc(this._root.node())) {
                 // only calculate once
                 this._width = this._widthCalc(this._root.node());
             }
